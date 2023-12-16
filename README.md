@@ -28,7 +28,7 @@ The program reads words from input files specified in the filenames vector. Each
 The program will output the longest and second-longest compounded words for each input file along with the time taken for processing.
 
 # Example Input Files
-Input_01.txt
+Input_01.txt, 
 Input_02.txt
 
 # Notes
