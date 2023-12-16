@@ -3,20 +3,13 @@
 # Overview
 This program is designed to find the longest and second longest compounded words from a list of words using a trie data structure. The solution includes a C++ implementation that reads words from input files, processes them using the trie, and outputs the results.
 
-# Design
+# Design Decisions
 Trie Implementation
 The program uses a trie data structure to efficiently store and retrieve words. The TrieNode structure represents a node in the trie, and the Solution class manages the trie operations such as insertion, search, and flag manipulation.
+The decision to use a Trie structure helps organize words effectively. Sorting words by length makes it easier to find longer compounded words. The Trie quickly checks if a word can be made using other words. The code is flexible, handling multiple input files, and uses C++11 for improved functionality.
 
-# Word Processing
-The Solution class includes methods for inserting words into the trie, searching for compounded words, and marking/unmarking the end of words. The program utilizes recursion to navigate the trie during searches and updates.
-
-# Decision
-We opted for a trie data structure to efficiently store and process a large number of words.
-Recursion simplifies code structure and allows seamless traversal of the trie, enhancing readability and maintainability.
-Words are sorted based on length in descending order.
-
-# File Input/Output
-The program reads words from input files specified in the filenames vector. Each input file is processed independently, and the results are printed to the console.
+# Approach
+This code utilizes a Trie data structure to efficiently identify the longest and second-longest compounded words from a list. By sorting the words in descending order of length, it prioritizes longer words during the search process. The Trie is built by inserting each word, and during traversal, the code checks if a word can be formed using two or more other words. The resulting longest and second-longest compounded words are then displayed. The program is designed to process multiple input files, measuring the time taken for each operation. 
 
 # How to Execute
 
@@ -25,7 +18,8 @@ The program reads words from input files specified in the filenames vector. Each
 3. Compile and Run
 4. View Results:
 
-The program will output the longest and second-longest compounded words for each input file along with the time taken for processing.
+# File Input/Output
+The program reads words from input files specified in the filenames vector. Each input file is processed independently, and the results are printed to the console.
 
 # Example Input Files
 Input_01.txt, 
