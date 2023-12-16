@@ -16,7 +16,7 @@ This code utilizes a Trie data structure to efficiently identify the longest and
 1. Clone the Repository and open it on any IDE platform.
 2. Go to solution file
 3. Compile and Run
-4. View Results:
+4. View Results
 
 # File Input/Output
 The program reads words from input files specified in the filenames vector. Each input file is processed independently, and the results are printed to the console.
